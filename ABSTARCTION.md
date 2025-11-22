@@ -1,44 +1,40 @@
-# Exp.No:28  
-## Abstraction
 
----
+# Exp.No:21  
+## Constructors - Parameterized Constructor
 
 ### AIM  
-To write a Python program to define the abstract base class named `Polygon` and also define the abstract method. This base class is inherited by various subclasses. Implement the abstract method in each subclass. Create objects of the subclasses and invoke the `sides()` method.
-
----
+Write a Python code to create a Class for a Person with the parameterised constructor which will take the name and userid of the person as parameters print the userid  of the person,
 
 ### ALGORITHM
 
-1. **Start the Program.**
-2. **Import the ABC class** from the `abc` module to implement abstraction.
-3. **Define the abstract base class Polygon**:
-   - Inherit from `ABC` (Abstract Base Class).
-   - Define an abstract method `sides()` with no implementation.
-4. **Define the Triangle class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"Triangle has 3 sides"`.
-5. **Define the Pentagon class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"Pentagon has 5 sides"`.
-6. **Define the Hexagon class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"Hexagon has 6 sides"`.
-7. **Define the Square class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"I have 4 sides"`.
-8. **Create an object `t` of the Triangle class** and call the `sides()` method to print the number of sides.
-9. **Create an object `s` of the Square class** and call the `sides()` method to print the number of sides.
-10. **Create an object `p` of the Pentagon class** and call the `sides()` method to print the number of sides.
-11. **Create an object `k` of the Hexagon class** and call the `sides()` method to print the number of sides.
-12. **End the Program.**
-
----
+1. Begin the program.  
+2. Define a `person` class.  
+3. The `person` class should have a parameterized `__init__` method that accepts two parameters: `name` and `userid`.  
+4. Inside the `__init__` method, assign the `name` to `self.name` and the `userid` to `self.userid`.  
+5. Print the `self.userid`.  
+6. Prompt the user to enter their `name` (string) and `userid`.  
+7. Create an instance `obj` of the `person` class by passing the entered `name` and `userid` to the constructor.  
+8. Terminate the program.
 
 ### PROGRAM
-
 ```
+Reg.No: 212223060179
+Name: Namachivayam T
 
-
+class person:
+    def __init__(self,name,userid):
+        self.name=name
+        self.userid=userid
+    def display(self):
+        print(self.userid)
+name=str(input())
+userid=str(input())
+obj=person(name,userid)
+obj.display()
 ```
 
 ### OUTPUT
-
+<img width="758" height="261" alt="image" src="https://github.com/user-attachments/assets/fb33bf94-e8b9-4977-a7a3-789879de7951" />
 
 ### RESULT
+Thus,a Python code to create a class for a person with a parameterized constructor are verified.
